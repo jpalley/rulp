@@ -55,6 +55,10 @@ class Solver
     return thread, output
   end
 
+  def self.set_executable(exec)
+    @@exec = exec
+  end
+
 end
 
 require_relative 'cbc'

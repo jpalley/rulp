@@ -15,7 +15,7 @@ class Cbc < Solver
   end
 
   def self.executable
-    :cbc
+    @@exec || :cbc
   end
 
   def store_results(variables)
